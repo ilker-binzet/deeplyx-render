@@ -1,10 +1,10 @@
 services:
   - type: web
     name: deeplyx
-    env: docker
+    env: image
     region: oregon
     plan: free
-    dockerfilePath: ""
-    image: ghcr.io/owo-network/deeplx:latest
+    image:
+      url: ghcr.io/owo-network/deeplx:latest
     healthCheckPath: /
     autoDeploy: false
